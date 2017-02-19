@@ -1,3 +1,5 @@
+package com.company;
+
 /**
  * Created by dande on 14-2-2017.
  */
@@ -7,6 +9,13 @@ public class Oval extends DrawingItem {
     private double height;
     private double weight;
 
+    public Oval(Point anchor, double width, double height, double weight, Color color) {
+        this.anchor = anchor;
+        this.width = width;
+        this.height = height;
+        this.weight = weight;
+        super.color = color;
+    }
 
     @Override
     public Point getAnchor() {
@@ -41,5 +50,9 @@ public class Oval extends DrawingItem {
 
     public void setWeight(double weight) {
         this.weight = weight;
+    }
+
+    public String toString(){
+        return anchor.toString() + " "+ color.toString() +" Oval" ;
     }
 }

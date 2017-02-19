@@ -1,3 +1,5 @@
+package com.company;
+
 import java.io.File;
 
 /**
@@ -8,6 +10,13 @@ public class Image extends DrawingItem{
     private Point anchor;
     private double width;
     private double height;
+
+    public Image( Point anchor, double width, double height) {
+        //this.file = file;
+        this.anchor = anchor;
+        this.width = width;
+        this.height = height;
+    }
 
     public File getFile() {
         return file;
@@ -42,5 +51,8 @@ public class Image extends DrawingItem{
     @Override
     public double getHeight() {
         return height;
+    }
+    public String toString(){
+        return anchor.toString() + " Image ";
     }
 }

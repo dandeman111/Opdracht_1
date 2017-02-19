@@ -1,12 +1,13 @@
-import com.company.Color;
+package com.company;
 
 /**
  * Created by dande on 14-2-2017.
  */
 public abstract class DrawingItem {
-    private Color color;
-    private DrawingItem previousState;
+    protected Color color;
+    protected DrawingItem previousState;
 
+    //getters setters
     public DrawingItem getPreviousState() {
         return previousState;
     }
