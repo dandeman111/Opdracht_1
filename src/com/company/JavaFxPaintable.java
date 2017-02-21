@@ -9,10 +9,13 @@ public class JavaFxPaintable implements Paintable {
 
    private GraphicsContext graphics;
 
+    public JavaFxPaintable(GraphicsContext graphics) {
+        this.graphics = graphics;
+    }
 
-   @Override
+    @Override
     public void paint(Oval oval) {
-    
+
     }
 
     @Override
