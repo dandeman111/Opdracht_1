@@ -3,6 +3,7 @@ package com.company;
 /**
  * Created by dande on 14-2-2017.
  */
+@SuppressWarnings("DefaultFileTemplate")
 public abstract class DrawingItem {
     protected Color color;
     protected DrawingItem previousState;
@@ -10,6 +11,10 @@ public abstract class DrawingItem {
     //getters setters
     public DrawingItem getPreviousState() {
         return previousState;
+    }
+
+    public void paintUsing(Paintable paintable){
+
     }
 
     public void setPreviousState(DrawingItem previousState) {

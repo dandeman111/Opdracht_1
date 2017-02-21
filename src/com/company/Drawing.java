@@ -6,6 +6,7 @@ import java.util.List;
 /**
  * Created by dande on 19-2-2017.
  */
+@SuppressWarnings("DefaultFileTemplate")
 public class Drawing {
     private String name;
     private List<DrawingItem> items;
@@ -13,7 +14,7 @@ public class Drawing {
 
 public Drawing(String name) {
     this.name = name;
-    items = new ArrayList<DrawingItem>();
+    items = new ArrayList<>();
 }
 public void addDrawingItem(DrawingItem d){
     items.add(d);
@@ -49,6 +50,8 @@ public void changeItem(DrawingItem itemToChange,DrawingItem newItem){
     public void setItems(List<DrawingItem> items) {
         this.items = items;
     }
+
+
 
     public void sortList(){
 

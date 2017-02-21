@@ -5,13 +5,15 @@ import java.io.File;
 /**
  * Created by dande on 14-2-2017.
  */
+@SuppressWarnings("DefaultFileTemplate")
 public class Image extends DrawingItem{
     private File file;
     private Point anchor;
     private double width;
     private double height;
 
-    public Image( Point anchor, double width, double height) {
+    @SuppressWarnings("SameParameterValue")
+    public Image(Point anchor, double width, double height) {
         //this.file = file;
         this.anchor = anchor;
         this.width = width;

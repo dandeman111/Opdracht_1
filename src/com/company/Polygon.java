@@ -3,6 +3,7 @@ package com.company;
 /**
  * Created by dande on 14-2-2017.
  */
+@SuppressWarnings("DefaultFileTemplate")
 public class Polygon extends DrawingItem {
     private Point[] vertices;
     private double weight;
